@@ -8,6 +8,7 @@ import "./style.scss";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
 import logo from "../../assets/movix-logo.svg";
+import Logo from "./logo/Logo";
 
 const Header = () => {
   const [show, setShow] = useState("top"); // for header effect while scrolling
@@ -81,7 +82,8 @@ const Header = () => {
     <header className={`header ${mobileMenu ? "mobileView" : ""} ${show}`}>
       <ContentWrapper>
         <div className="logo" onClick={() => navigate("/")}>
-          <img src={logo} alt="" />
+          {/* <img src={logo} alt="" /> */}
+          <Logo />
         </div>
 
         <ul className="menuItems">

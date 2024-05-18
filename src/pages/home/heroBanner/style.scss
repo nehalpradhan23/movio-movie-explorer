@@ -39,7 +39,8 @@
     height: 250px;
     background: linear-gradient(180deg,
         rgba(4, 21, 45, 0) 0%,
-        rgba(105, 10, 10));
+        rgb(8, 6, 92));
+        // rgba(105, 10, 10));
         // rgba(105, 10, 10, 0.855) 79.17%);
     // background: linear-gradient(180deg,
     //     rgba(4, 21, 45, 0) 0%,
@@ -113,6 +114,20 @@
         border-radius: 0 30px 30px 0;
         font-size: 16px;
         cursor: pointer;
+
+        &:disabled {
+          cursor: default;
+          background: #51598a;
+          &:hover{
+            transform: scale(100%);
+          }
+        }
+        
+        &:hover{
+          transition: all 0.2s;
+          // background: #1b2fa0;
+          transform: scale(105%);
+        }
 
         @include md {
           width: 150px;

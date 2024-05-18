@@ -1,0 +1,11 @@
+.logo{
+  font-size: 35px;
+  font-weight: bold;
+  display: inline-flex;
+  background: #CF6410;
+background: linear-gradient(to right, #CF6410 44%, #df4d4b 100%);
+// -webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
