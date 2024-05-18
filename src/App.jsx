@@ -10,7 +10,7 @@ import Home from "./pages/home/Home";
 import Details from "./pages/details/Details";
 import SearchResult from "./pages/searchResult/SearchResult";
 import Explore from "./pages/explore/Explore";
-import PageNotFound from "./pages/404/PageNotFound";
+import NotFound from "./pages/404/NotFound";
 
 function App() {
   const dispatch = useDispatch();
@@ -62,7 +62,7 @@ function App() {
         <Route path="/:mediaType/:id" element={<Details />} />
         <Route path="/search/:query" element={<SearchResult />} />
         <Route path="/explore/:mediaType" element={<Explore />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>
